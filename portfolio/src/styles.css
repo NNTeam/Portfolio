@@ -4,6 +4,7 @@
 }
 body{
   background: url('./assets/img/homebg.jpg')no-repeat center center fixed; 
+  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -27,4 +28,27 @@ app-home{
 app-webdev{
       width: 100%;
       position: absolute;
+}
+app-root{
+      width: 100%;
+      position: absolute;
+}
+.up-loader {
+      padding-top: 250px;
+      height: 100%;
+}
+.loader {
+      margin: 0 auto;
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

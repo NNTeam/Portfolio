@@ -12,5 +12,5 @@ export class AppComponent {
   constructor(af: AngularFire) {
     this.items = af.database.list('/items');
   }
-  title = 'app works!';
+  title = 'Portfolio NNTeam';
 }

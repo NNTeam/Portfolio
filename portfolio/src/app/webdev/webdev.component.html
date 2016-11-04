@@ -1,21 +1,3 @@
-<a routerLink="/"></a>
-<div class="container">
-  <a routerLink="/"><h1>{{title}}</h1></a>
-  <h2>My Heroes</h2>
-  <ul class="heroes">
-    <li *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.selected]="hero === selectedHero">
-      <span class="badge">{{hero.id}}</span> {{hero.name}}
-    </li>
-  </ul>
-  <app-my-hero-detail [hero]="selectedHero"></app-my-hero-detail>
-<table>
-  <tr *ngFor="let item of items | async" >
-    <td>{{item.id}}</td>
-    <td (click)="check(item)" style="cursor: pointer;">{{item.name}}</td>
-    <td (click)="del(item)" style="cursor: pointer;">x</td>
-  </tr>
-</table>
-</div>
-  <input type="text" [(ngModel)]="temp.name">
-  <input type="number" [(ngModel)]="temp.id">
-  <button (click)="send(temp)" >Send</button>
+<p>
+  webdev works!
+</p>

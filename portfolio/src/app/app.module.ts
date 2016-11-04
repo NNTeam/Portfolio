@@ -12,9 +12,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import * as firebase from 'firebase';
 import { FirebaseServiceService } from './shared/services/firebase-service.service';
 import { WebdevComponent } from './webdev/webdev.component';
-
-import { HeroDetailComponent } from './webdev/hero-detail.component';
 import { AngularFireModule, AuthProviders, AuthMethods } from 'angularfire2';
+import { CookingComponent } from './cooking/cooking.component';
+import { MusicComponent } from './music/music.component';
 
 export const firebaseConfig = {
   apiKey: 'AIzaSyB9NM74peTUcEEYeDXuxizc_NOItPscLeI',
@@ -35,7 +35,9 @@ const myFirebaseAuthConfig = {
     NavComponent,
     AboutComponent,
     PageNotFoundComponent,
-    WebdevComponent,HeroDetailComponent
+    WebdevComponent,
+    CookingComponent,
+    MusicComponent
   ],
   imports: [
     BrowserModule,
