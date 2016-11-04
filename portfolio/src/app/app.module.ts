@@ -15,6 +15,7 @@ import { WebdevComponent } from './webdev/webdev.component';
 import { AngularFireModule, AuthProviders, AuthMethods } from 'angularfire2';
 import { CookingComponent } from './cooking/cooking.component';
 import { MusicComponent } from './music/music.component';
+import { TwojaStaraComponent } from './twoja-stara/twoja-stara.component';
 
 export const firebaseConfig = {
   apiKey: 'AIzaSyB9NM74peTUcEEYeDXuxizc_NOItPscLeI',
@@ -37,7 +38,8 @@ const myFirebaseAuthConfig = {
     PageNotFoundComponent,
     WebdevComponent,
     CookingComponent,
-    MusicComponent
+    MusicComponent,
+    TwojaStaraComponent
   ],
   imports: [
     BrowserModule,

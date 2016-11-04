@@ -23,12 +23,7 @@ import { Location }               from '@angular/common';
         }),
         animate('0.5s ease-in')
       ]),
-      transition(':leave', [
-        animate('0.5s ease-out', style({
-          transform: 'translateX(-100%)',
-          opacity: 0
-        }))
-      ])
+      
     ])
   ]
 })
