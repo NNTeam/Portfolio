@@ -19,7 +19,8 @@
     ],
     "types": [
       "jasmine",
-      "node"
+      "node",
+      "firebase"
     ],
     "paths": {
       "angular-cli/*": [ "./packages/angular-cli/*" ],
