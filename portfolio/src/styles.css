@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+.container-fluid{
+    padding: 0;
+}
+body{
+  background: url('./assets/img/homebg.jpg')no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+app-nav{
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+app-about{
+      width: 100%;
+      position: absolute;
+}
+app-home{
+      width: 100%;
+      position: absolute;
+}
+app-webdev{
+      width: 100%;
+      position: absolute;
+}

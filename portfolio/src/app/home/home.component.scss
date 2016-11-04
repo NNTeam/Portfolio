@@ -1,0 +1,46 @@
+
+.content{
+  /*background-position: center;
+  background-size: contain;*/
+  background-color: rgba(0, 0, 0, 0.62);
+  width: 100%;
+  height: 100vh;
+  .wrapper{
+    position: absolute;
+    top: 50%;
+    margin-top: -250px;/* half of #content height*/
+    left: 0;
+    width: 100%;
+    .centered{
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      height: 395px;
+      .box{
+        height: 500px;
+        .box-margin{
+          transition: 300ms;
+          margin: 40px;
+          background-color: lightgray;
+          height: 100%;
+          &:hover{
+            transform: scale(1.1);
+          }
+        }
+        .webdev{
+          // background: url('./assets/img/angular.svg') center center no-repeat;
+          background-color: rgba(0, 0, 0, 0.62);
+        }
+        .moto{
+          // background: url('./assets/img/moto.jpg') right -68px center no-repeat;
+          background-color: rgba(0, 0, 0, 0.62);
+        }
+        .music{
+          // background: url('./assets/img/piano.jpg') center center no-repeat;
+          background-color: rgba(0, 0, 0, 0.62);
+        }
+      }
+    }
+  }
+    
+}
