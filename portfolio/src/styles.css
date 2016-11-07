@@ -12,9 +12,8 @@ body{
 }
 
 app-nav{
-    position: absolute;
+    /*position: absolute;*/
     width: 100%;
-    z-index: 10;
 }
 
 app-about{
@@ -30,6 +29,7 @@ app-webdev{
       position: absolute;
 }
 app-root{
+      background-image: none;
       width: 100%;
       position: absolute;
 }
@@ -38,7 +38,7 @@ app-root{
       height: 100%;
 }
 .loader {
-      margin: 0 auto;
+    margin: 0 auto;
     border: 16px solid #f3f3f3; /* Light grey */
     border-top: 16px solid #3498db; /* Blue */
     border-radius: 50%;

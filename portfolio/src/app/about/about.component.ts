@@ -18,16 +18,15 @@ import { Location }               from '@angular/common';
       ),
       transition(':enter', [
         style({
-          transform: 'translateY(-100%)',
+          transform: 'translateY(100%)',
           opacity: 0
         }),
-        animate('0.5s ease-in')
+        animate('0.5s ease')
       ]),
       transition(':leave', [
-        animate('0.5s ease-out', style({
-          transform: 'translateX(-100%)',
-          opacity: 0
-        }))
+        style({
+          display: 'none'
+        })
       ])
     ])
   ]

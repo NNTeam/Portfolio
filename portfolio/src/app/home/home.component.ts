@@ -1,8 +1,8 @@
 import { Component, OnInit, HostBinding,
          trigger, transition, animate,
-         style, state } from '@angular/core';
+         style, state }                   from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
-import { Location }               from '@angular/common';
+import { Location }                       from '@angular/common';
 
 @Component({
   selector: 'app-home',
@@ -24,10 +24,9 @@ import { Location }               from '@angular/common';
         animate('0.5s ease-in')
       ]),
       transition(':leave', [
-        animate('0.5s ease-out', style({
-          transform: 'translateX(-100%)',
-          opacity: 0
-        }))
+        style({
+          display: 'none'
+        })
       ])
     ])
   ]

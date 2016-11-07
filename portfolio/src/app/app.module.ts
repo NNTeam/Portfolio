@@ -15,6 +15,9 @@ import { WebdevComponent } from './webdev/webdev.component';
 import { AngularFireModule, AuthProviders, AuthMethods } from 'angularfire2';
 import { CookingComponent } from './cooking/cooking.component';
 import { MusicComponent } from './music/music.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { ProjectDetailComponent } from './webdev/project/project-detail/project-detail.component';
+import { SkillsComponent } from './webdev/skills/skills.component';
 
 export const firebaseConfig = {
   apiKey: 'AIzaSyB9NM74peTUcEEYeDXuxizc_NOItPscLeI',
@@ -37,7 +40,10 @@ const myFirebaseAuthConfig = {
     PageNotFoundComponent,
     WebdevComponent,
     CookingComponent,
-    MusicComponent
+    MusicComponent,
+    FooterComponent,
+    ProjectDetailComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

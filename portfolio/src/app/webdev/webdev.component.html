@@ -1,3 +1,21 @@
-<p>
-  webdev works!
-</p>
+<app-nav></app-nav>
+<div class="container-fluid">
+	<div class="col-sm-3">
+		<app-skills></app-skills>
+	</div>
+	<div class="col-sm-9 projects">
+		<h1>Wybierz projekt:</h1>
+		<div class="row ">
+			<div class="col-md-4 " *ngFor="let project of projects">
+				<img class="img-fluid img-thumbnail" 
+					[class.selected]="project === selectedProject" 
+					(click)="onSelect(project)" 
+					src="{{project.imgs[0]}}" alt="{{project.imgs[0]}}">
+			</div>
+		</div>
+		<app-project-detail [project]="selectedProject">
+			<p>Wybierz projekt</p>
+		</app-project-detail>
+	</div>
+</div>
+<app-footer></app-footer>
