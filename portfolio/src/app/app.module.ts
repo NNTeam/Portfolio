@@ -15,9 +15,13 @@ import { WebdevComponent } from './webdev/webdev.component';
 import { AngularFireModule, AuthProviders, AuthMethods } from 'angularfire2';
 import { CookingComponent } from './cooking/cooking.component';
 import { MusicComponent } from './music/music.component';
+<<<<<<< HEAD
 import { FooterComponent } from './shared/footer/footer.component';
 import { ProjectDetailComponent } from './webdev/project/project-detail/project-detail.component';
 import { SkillsComponent } from './webdev/skills/skills.component';
+=======
+import { TwojaStaraComponent } from './twoja-stara/twoja-stara.component';
+>>>>>>> efe3749451dd570a06ba86048810b1ccc4e0868f
 
 export const firebaseConfig = {
   apiKey: 'AIzaSyB9NM74peTUcEEYeDXuxizc_NOItPscLeI',
@@ -41,9 +45,13 @@ const myFirebaseAuthConfig = {
     WebdevComponent,
     CookingComponent,
     MusicComponent,
+<<<<<<< HEAD
     FooterComponent,
     ProjectDetailComponent,
     SkillsComponent
+=======
+    TwojaStaraComponent
+>>>>>>> efe3749451dd570a06ba86048810b1ccc4e0868f
   ],
   imports: [
     BrowserModule,

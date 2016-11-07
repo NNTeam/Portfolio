@@ -23,11 +23,15 @@ import { Location }                       from '@angular/common';
         }),
         animate('0.5s ease-in')
       ]),
+<<<<<<< HEAD
       transition(':leave', [
         style({
           display: 'none'
         })
       ])
+=======
+      
+>>>>>>> efe3749451dd570a06ba86048810b1ccc4e0868f
     ])
   ]
 })
