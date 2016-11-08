@@ -18,20 +18,16 @@ import { Location }               from '@angular/common';
       ),
       transition(':enter', [
         style({
-          transform: 'translateY(100%)',
+          transform: 'translateY(-100%)',
           opacity: 0
         }),
         animate('0.5s ease')
       ]),
-<<<<<<< HEAD
       transition(':leave', [
         style({
           display: 'none'
         })
       ])
-=======
-     
->>>>>>> efe3749451dd570a06ba86048810b1ccc4e0868f
     ])
   ]
 })

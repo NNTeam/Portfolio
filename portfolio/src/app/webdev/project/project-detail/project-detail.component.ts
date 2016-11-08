@@ -14,5 +14,4 @@ export class ProjectDetailComponent {
   isActive(url: string) {
     return url === this.project.imgs[0];
   }
-
 }

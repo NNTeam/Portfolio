@@ -9,8 +9,13 @@
     background-color: none;
 }
 .project-detail {
-    padding: 30px;
+    padding: 15px;
 }
 .details {
-    background-color: rgba(0,0,0,0.75);
+    background-color: rgba(0,0,0,0.6);
+    .tech {
+        span>img {
+            height: 3em;
+        }
+    }
 }

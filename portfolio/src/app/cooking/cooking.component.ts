@@ -7,7 +7,7 @@ import { Location }               from '@angular/common';
 @Component({
   selector: 'app-cooking',
   templateUrl: './cooking.component.html',
-  styleUrls: ['./cooking.component.css'],
+  styleUrls: ['./cooking.component.scss'],
   animations: [
     trigger('routeAnimation', [
       state('*',
@@ -23,21 +23,16 @@ import { Location }               from '@angular/common';
         }),
         animate('0.5s ease-in')
       ]),
-<<<<<<< HEAD
       transition(':leave', [
         style({
           display: 'none',
         })
       ])
-=======
-      
->>>>>>> efe3749451dd570a06ba86048810b1ccc4e0868f
     ])
   ]
 })
 export class CookingComponent implements OnInit {
 
-<<<<<<< HEAD
   @HostBinding('@routeAnimation') get routeAnimation() {
     return true;
   }
@@ -48,29 +43,6 @@ export class CookingComponent implements OnInit {
 
   @HostBinding('style.position') get position() {
     return 'absolute';
-  }
-
-  constructor(private route: ActivatedRoute,
-    private router: Router,
-    private location: Location) { }
-
-  ngOnInit() {
-    this.route.params.forEach((params: Params) => {
-      let id = +params['id'];
-    });
-=======
-  
-  @HostBinding('@routeAnimation') get routeAnimation() {
-    return true;
-  }
-
-  @HostBinding('style.display') get display() {
-    return 'block';
-  }
-
-  @HostBinding('style.position') get position() {
-    return 'absolute';
->>>>>>> efe3749451dd570a06ba86048810b1ccc4e0868f
   }
 
   constructor(private route: ActivatedRoute,

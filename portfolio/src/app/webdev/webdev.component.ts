@@ -6,43 +6,15 @@ import {
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { Project } from './project/project';
+import { ProjectService } from './project/project.service';
 
-const PROJECTS: Project[] = [
-  {
-    id: 1,
-    name: 'magnetic',
-    info: 'strona internetowa magnetic.org.pl',
-    imgs: ['./assets/img/projects/magnetic/1.png',
-      './assets/img/projects/magnetic/2.png',
-      './assets/img/projects/magnetic/3.png',
-      './assets/img/projects/magnetic/4.png'
-    ]
-  },
-  {
-    id: 2,
-    name: 'rivers',
-    info: 'strona internetowa rivers.pl',
-    imgs: ['./assets/img/projects/rivers/1.png',
-      './assets/img/projects/rivers/2.png',
-      './assets/img/projects/rivers/3.png'
-    ]
-  },
-  {
-    id: 3,
-    name: 'materialy-dydaktyczne',
-    info: 'zarządzanie materiałami dydaktycznymi prz',
-    imgs: ['./assets/img/projects/materialy-dydaktyczne/1.png',
-      './assets/img/projects/materialy-dydaktyczne/2.png',
-      './assets/img/projects/materialy-dydaktyczne/3.png',
-      './assets/img/projects/materialy-dydaktyczne/4.png'
-    ]
-  }
-];
+
 
 @Component({
   selector: 'app-webdev',
   templateUrl: './webdev.component.html',
   styleUrls: ['./webdev.component.scss'],
+  providers: [ProjectService],
   animations: [
     trigger('routeAnimation', [
       state('*',
@@ -79,18 +51,24 @@ export class WebdevComponent implements OnInit {
     return 'absolute';
   }
 
+  projects: Project[];
+  selectedProject: Project;
+
   constructor(private route: ActivatedRoute,
     private router: Router,
-    private location: Location) { }
+    private location: Location,
+    private projectService: ProjectService) { }
 
   ngOnInit() {
     this.route.params.forEach((params: Params) => {
       let id = +params['id'];
     });
+    this.getProjects();
   }
 
-  projects = PROJECTS;
-  selectedProject: Project;
+  getProjects(): void {
+    this.projectService.getProjects().then(projects => this.projects = projects);
+  }
 
   onSelect(project: Project): void {
     this.selectedProject = project;

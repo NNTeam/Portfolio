@@ -3,7 +3,7 @@ import {Routes, RouterModule} from '@angular/router';
 import {HomeComponent} from './home/home.component';
 import {AboutComponent} from './about/about.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
-import { WebdevComponent } from './webdev/webdev.component';
+import {WebdevComponent} from './webdev/webdev.component';
 import {CookingComponent} from './cooking/cooking.component';
 import {MusicComponent} from './music/music.component';
 

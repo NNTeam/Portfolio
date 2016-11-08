@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src\app\webdev\project\mock-project.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">all files</a> / <a href="index.html">src/app/webdev/project/</a> mock-project.ts
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>1/1</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>1/1</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Project } from './project';
+&nbsp;
+export const PROJECTS: Project[] = [
+  {
+    id: 1,
+    name: 'Materiały dydaktyczne',
+    techs: ['PHP', 'XML', 'BOOTSTRAP3', 'CSS3', 'HTML5'],
+    info: `Serwis internetowy Materiały dydaktyczne to projekt w języku php wykonany na zaliczenie przedmiotu
+          Technologie WEB i JAVA. Istnieje w nim trzy typy użytkowników: student, nauczyciel i administrator.
+          Nauczyciel może wrzucać na serwer pliki nadając im atrybuty nazwy, hasła oraz widoczności. 
+          Może też usunąć, pobrać lub edytować wrzucony plik. Student może pobierać tylko widoczne pliki,
+          które są (niekoniecznie) zabezpieczone hasłem. W projekcie zastosowałem technologię XML jako bazę
+          danych, hasła do plików i kont użytkowników są szyfrowane. Całość dopełnia framework bootstrap,
+          który zapewnia responsywność serwisu.`,
+    path: './assets/img/projects/materialy-dydaktyczne/',
+    imgs: ['1.png', '2.png', '3.png', '4.png']
+  },
+  {
+    id: 2,
+    name: 'Rivers',
+    techs: ['PHP', 'SQL', 'BOOTSTRAP3', 'CSS3', 'HTML5'],
+    info: `Strona internetowa rivers.pl, przystosowana do urządzeń mobilnych. 
+          Projekt jest napisany w języku php, przy użyciu bazy danych phpmyadmin. 
+          Widoki stworzone są w frameworku Bootstrap 3, przy zachowaniu standardów HTML5 i CSS3.`,
+    path: './assets/img/projects/rivers/',
+    imgs: ['1.png', '2.png', '3.png']
+  },
+  {
+    id: 3,
+    name: 'Magnetic',
+    techs: ['PHP', 'BOOTSTRAP3', 'CSS3', 'HTML5'],
+    info: `Strona internetowa magnetic.org.pl, przystosowana do urządzeń mobilnych. 
+          Projekt jest napisany w języku php. 
+          Widoki stworzone są w frameworku Bootstrap 3, przy zachowaniu standardów HTML5 i CSS3.`,
+    path: './assets/img/projects/magnetic/',
+    imgs: ['1.png', '2.png', '3.png', '4.png']
+  }
+];
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Nov 08 2016 14:08:38 GMT+0100 (Środkowoeuropejski czas stand.)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

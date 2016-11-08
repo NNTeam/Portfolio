@@ -1,21 +1,19 @@
 <app-nav></app-nav>
 <div class="container-fluid">
-	<div class="col-sm-3">
+	<div class="col-lg-3 col-sm-5">
 		<app-skills></app-skills>
 	</div>
-	<div class="col-sm-9 projects">
+	<div class="col-lg-9 col-sm-7 projects">
 		<h1>Wybierz projekt:</h1>
 		<div class="row ">
-			<div class="col-md-4 " *ngFor="let project of projects">
+			<div class="col-md-3" *ngFor="let project of projects">
 				<img class="img-fluid img-thumbnail" 
 					[class.selected]="project === selectedProject" 
 					(click)="onSelect(project)" 
-					src="{{project.imgs[0]}}" alt="{{project.imgs[0]}}">
+					src="{{ project.path + project.imgs[0] }}" alt="{{ project.imgs[0] }}">
 			</div>
 		</div>
-		<app-project-detail [project]="selectedProject">
-			<p>Wybierz projekt</p>
-		</app-project-detail>
+		<app-project-detail [project]="selectedProject"></app-project-detail>
 	</div>
 </div>
 <app-footer></app-footer>
